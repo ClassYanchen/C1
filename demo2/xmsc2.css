@@ -1,0 +1,299 @@
+body {
+    background-color: #f1f1f1;
+}
+
+/*  顶部黑色导航栏-----------------------/*  顶部黑色导航栏-----------------------/*  顶部黑色导航栏-----------------------
+ topnav最外层黑色包裹框  topnav-style第二层的容器，包裹住左右两块内容，让他们不贴着界面的左右两边 
+warp适用于导航栏的通用字体、颜色、间距样式  nav-left控制左边整块文字的排列浮动  nav-rigth设置右边整块字体的排列浮动 */
+.topnav {
+    background-color: #333;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.topnav-style {
+    background-color: #333;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.nav-left {
+    float: left;
+    display: flex;
+}
+
+.nav-rigth {
+    float: right;
+    display: flex;
+}
+
+.warp {
+    color: #e1d7d7;
+
+}
+
+.warp span {
+    color: #757373;
+    margin: 0 3.6px;
+}
+
+.warp li {
+    margin-left: 2px;
+
+}
+
+
+.GWC1:hover {
+    background-color: #bababa;
+    color: #000000;
+    border-radius: 2px;
+}
+
+.GWC1:hover>.gwc {
+    display: block;
+
+
+}
+
+.gwc {
+    width: 150px;
+    height: 80px;
+    background-color: #fdf3f3;
+    position: absolute;
+    top: 51px;
+    right: 150px;
+    box-shadow: 0 1px 5px #bababa;
+    border-radius: 2px;
+    display: none;
+    padding-left: 20px;
+    color: #505050;
+}
+
+.GWC1 {
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* 顶部广告页面-------------------------top-img   xst修饰条  .img-left-nav图片上的左侧导航栏  nav-li图片左侧的导航栏  li-blok导航栏右侧弹出的文本*/
+.xst2 {
+    width: 100%;
+    height: 10px;
+
+}
+
+.xst1 {
+
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgb(247, 148, 148), rgb(0, 0, 0));
+}
+
+.top-img {
+    width: 100%;
+    height: 500px;
+
+}
+
+.top-img>img {
+    width: 100%;
+    height: 500px;
+}
+
+.img-left-nav {
+    background-color: #000000;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    opacity: 0.7;
+    border-left: 2px solid rgb(92, 1, 1);
+}
+
+.nav-li {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 4px;
+    text-align: center;
+    user-select: none;
+
+
+}
+
+.nav-li:hover {
+    background-color: #e8e4e4;
+    color: #000000;
+
+}
+
+.li-blok {
+    width: 900px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: 299px;
+    border-left: none;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px black;
+    color: #e0e0e0;
+    display: none;
+    border-radius: 0 6px 6px 0;
+}
+
+
+.nav-li:hover>.li-blok {
+    display: block;
+}
+
+.li-blok>p {
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+
+/* ------------------------------------预选区 */
+.yx {
+    width: 100%;
+    height: 500px;
+}
+
+/* -----------------------------------------主体区域   warp2主体通用宽度样式    zx甄区域 */
+.warp2 {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    /* 同时实现水平和垂直居中 */
+}
+
+
+.zx {
+    text-align: center;
+}
+
+
+.zx li img {
+    width: 290px;
+    height: 220px;
+}
+
+.zx ul {
+    display: flex;
+    /* 启用 Flexbox */
+    flex-direction: row;
+    /* 设置主轴方向为行（默认值） */
+    justify-content: flex-start;
+    /* 项目在主轴上的起点对齐（默认值） */
+    align-items: stretch;
+    /* 项目在交叉轴上拉伸以匹配容器的交叉轴长度 */
+}
+
+.zx li {
+    margin: 0 0 10px 10px;
+    width: 300px;
+    height: 300px;
+
+    background-color: #f7f9f9;
+}
+
+.wz1 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.wz2 {
+    text-align: center;
+    color: #7f7c7c;
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.border-test>p {
+    font-size: 22px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+.warp2 li {
+    transition: all 0.2s linear;
+    border-radius: 5px;
+
+}
+
+.warp2 li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --------------------------------手机专区 */
+.sj img {
+    width: 230px;
+    height: 220px;
+
+}
+
+.sj ul {
+    display: flex;
+    /* 启用 Flexbox */
+    flex-direction: row;
+    /* 设置主轴方向为行（默认值） */
+    justify-content: flex-start;
+    /* 项目在主轴上的起点对齐（默认值） */
+    align-items: stretch;
+    /* 项目在交叉轴上拉伸以匹配容器的交叉轴长度 */
+}
+
+.sj li {
+    margin: 0 0 10px 10px;
+    width: 300px;
+    height: 300px;
+    background-color: #f7f9f9;
+}
+
+.sj {
+    text-align: center;
+
+}
+
+/* --------------------------------平板机专区 */
+.pb img {
+    width: 230px;
+    height: 220px;
+}
+
+
+.pb {
+    text-align: center;
+}
+
+.pb ul {
+    display: flex;
+    /* 启用 Flexbox */
+    flex-direction: row;
+    /* 设置主轴方向为行（默认值） */
+    justify-content: flex-start;
+    /* 项目在主轴上的起点对齐（默认值） */
+    align-items: stretch;
+    /* 项目在交叉轴上拉伸以匹配容器的交叉轴长度 */
+}
+
+.pb li {
+    margin: 0 0 10px 10px;
+    width: 300px;
+    height: 300px;
+    background-color: #f7f9f9;
+    display: block;  
+
+}
+
+.border-test2>p {
+    font-size: 22px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
